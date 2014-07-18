@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NearbyMapViewController">
+            <connections>
+                <outlet property="bdSearchTextField" destination="1G1-PS-3ma" id="6Eh-b9-37F"/>
+                <outlet property="controllBottom" destination="M7T-Oo-i03" id="PTJ-ZC-R2u"/>
+                <outlet property="controllSubView" destination="1Au-H9-VZH" id="p2r-i6-6dh"/>
+                <outlet property="goBtn" destination="VCo-j9-Q6S" id="6gD-yb-yA2"/>
+                <outlet property="locateBtn" destination="PdW-lc-OWt" id="UzH-j8-r0x"/>
+                <outlet property="mapView" destination="s6A-3T-Shx" id="Y1r-uP-yv8"/>
+                <outlet property="searchBtn" destination="ePd-Az-wvy" id="V5U-BK-mGM"/>
+                <outlet property="searchInputView" destination="ipo-iG-Uwb" id="PAy-Pq-R6x"/>
+                <outlet property="showListBtn" destination="TCP-oS-ac0" id="hcy-mA-XmF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="1Au-H9-VZH">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="506"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="s6A-3T-Shx" customClass="BMKMapView">
+                            <rect key="frame" x="-1" y="0.0" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="ooe-pI-iX8">
+                            <rect key="frame" x="262" y="80" width="38" height="260"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="psy-FD-H8v">
+                                    <rect key="frame" x="0.0" y="0.0" width="38" height="38"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="放大" image="icon_fangda.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="zoomIn" destination="-1" eventType="touchUpInside" id="wXo-7v-qKn"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="H8C-8C-lDB">
+                                    <rect key="frame" x="0.0" y="55" width="38" height="38"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="减小" image="icon_suoxiao.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="zoomOut" destination="-1" eventType="touchUpInside" id="MDE-Ad-Xbq"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TCP-oS-ac0">
+                                    <rect key="frame" x="0.0" y="170" width="38" height="38"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="icon_liebiao.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PdW-lc-OWt">
+                                    <rect key="frame" x="0.0" y="222" width="38" height="38"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="定位" image="icon_locate.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VCo-j9-Q6S">
+                                    <rect key="frame" x="-19" y="96" width="76" height="76"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="icon_woyaoqu.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="ipo-iG-Uwb">
+                            <rect key="frame" x="11" y="10" width="297" height="57"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sousuo_bg.png" id="feq-2I-Axy">
+                                    <rect key="frame" x="0.0" y="0.0" width="297" height="57"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ePd-Az-wvy">
+                                    <rect key="frame" x="240" y="6" width="50" height="45"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="sousuo_icon.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入需要搜索的地点名称..." minimumFontSize="17" id="1G1-PS-3ma">
+                                    <rect key="frame" x="52" y="13" width="193" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="M7T-Oo-i03">
+                    <rect key="frame" x="0.0" y="506" width="320" height="62"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tab_icon_background.png" id="9Dk-oi-nib">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="YM6-nJ-bZu">
+                            <rect key="frame" x="20" y="11" width="38" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="icon_landscape2.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="icon_landscape2_s.png"/>
+                            <connections>
+                                <action selector="onBottomBtnClicked:" destination="-1" eventType="touchUpInside" id="aFM-jj-fCY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b0R-cs-BUc">
+                            <rect key="frame" x="227" y="11" width="38" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="icpn_entertainment2.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" title="icpn_entertainment2" image="icpn_entertainment2_s.png"/>
+                            <connections>
+                                <action selector="onBottomBtnClicked:" destination="-1" eventType="touchUpInside" id="nnO-xn-rc5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I4w-NP-HLb">
+                            <rect key="frame" x="273" y="11" width="38" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="icon_shopping2.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="icon_shopping2_s.png"/>
+                            <connections>
+                                <action selector="onBottomBtnClicked:" destination="-1" eventType="touchUpInside" id="ziv-dX-nq0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Vsf-Pr-lEk">
+                            <rect key="frame" x="176" y="11" width="38" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="icpn_food2.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="icpn_food2_s.png"/>
+                            <connections>
+                                <action selector="onBottomBtnClicked:" destination="-1" eventType="touchUpInside" id="6Vl-Jd-0mS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="z2d-Bi-wP7">
+                            <rect key="frame" x="125" y="11" width="38" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="icpn_lvxingshe.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="icpn_lvxingshe_s.png"/>
+                            <connections>
+                                <action selector="onBottomBtnClicked:" destination="-1" eventType="touchUpInside" id="QIY-R9-FYz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gaq-pd-J5R">
+                            <rect key="frame" x="72" y="11" width="38" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="icon_stay2.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="icon_stay2_s.png"/>
+                            <connections>
+                                <action selector="onBottomBtnClicked:" destination="-1" eventType="touchUpInside" id="c61-v2-zub"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_fangda.png" width="38" height="38"/>
+        <image name="icon_landscape2.png" width="38" height="48"/>
+        <image name="icon_landscape2_s.png" width="38" height="48"/>
+        <image name="icon_liebiao.png" width="38" height="38"/>
+        <image name="icon_locate.png" width="38" height="38"/>
+        <image name="icon_shopping2.png" width="38" height="48"/>
+        <image name="icon_shopping2_s.png" width="38" height="48"/>
+        <image name="icon_stay2.png" width="38" height="48"/>
+        <image name="icon_stay2_s.png" width="38" height="48"/>
+        <image name="icon_suoxiao.png" width="38" height="38"/>
+        <image name="icon_woyaoqu.png" width="38" height="38"/>
+        <image name="icpn_entertainment2.png" width="38" height="48"/>
+        <image name="icpn_entertainment2_s.png" width="38" height="48"/>
+        <image name="icpn_food2.png" width="38" height="48"/>
+        <image name="icpn_food2_s.png" width="38" height="48"/>
+        <image name="icpn_lvxingshe.png" width="38" height="48"/>
+        <image name="icpn_lvxingshe_s.png" width="38" height="48"/>
+        <image name="sousuo_bg.png" width="595" height="115"/>
+        <image name="sousuo_icon.png" width="50" height="45"/>
+        <image name="tab_icon_background.png" width="320" height="62"/>
+    </resources>
+</document>

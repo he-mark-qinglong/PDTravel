@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0E1473E8-E66C-41FE-9407-04AA99682368</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PudongTravel</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>58FD1775-759C-412B-8DE7-19B6C894D1D2</key>
+		<string>svn://192.168.0.88/prjs/trunk/pdly2/code/ios</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PudongTravel/PudongTravel.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>58FD1775-759C-412B-8DE7-19B6C894D1D2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>58FD1775-759C-412B-8DE7-19B6C894D1D2</key>
+		<string>svn://192.168.0.88/prjs</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://192.168.0.88/prjs/trunk/pdly2/code/ios/PudongTravel/PudongTravel.xcworkspace</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>58FD1775-759C-412B-8DE7-19B6C894D1D2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
+			<string>branches</string>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlRepositoryTagsRelativeLocationKey</key>
+			<string>tags</string>
+			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
+			<string>trunk</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>58FD1775-759C-412B-8DE7-19B6C894D1D2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PDTravel</string>
+		</dict>
+	</array>
+</dict>
+</plist>

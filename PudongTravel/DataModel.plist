@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>expo</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>世博园</string>
+		</dict>
+		<array>
+			<string>getSbfhDetail</string>
+			<string>getQtcgList</string>
+		</array>
+		<array>
+			<string>getSbxgDetail</string>
+			<string>getSbxgList</string>
+			<string>getTjcgList</string>
+		</array>
+		<array>
+			<string>getSbjyDetail</string>
+			<string>getZgzyList</string>
+			<string>getZbxxList</string>
+		</array>
+	</array>
+	<key>lujiazui</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>陆家嘴</string>
+		</dict>
+		<array>
+			<string>getTjxDetail</string>
+			<string>getMsjdList</string>
+			<string>getTjxZbtjList</string>
+		</array>
+		<array>
+			<string>getDfblDetail</string>
+			<string>getSsshList</string>
+			<string>getXzysList</string>
+		</array>
+		<array>
+			<string>getJrjlyDetail</string>
+			<string>getJrjyList</string>
+			<string>getJrjlyZbtjList</string>
+		</array>
+	</array>
+</dict>
+</plist>
